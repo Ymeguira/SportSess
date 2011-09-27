@@ -57,7 +57,7 @@
 
 	<!-- ICON -->
 	
-	<link rel="icon" type="image/png" href="../static//img/favicon.png" />
+	<link rel="icon" type="image/png" href="../static/img/favicon.png" />
 	<!--[if lte IE 6]>
 	<link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico" />
 	<![endif]-->
@@ -85,10 +85,10 @@
 				<form method="post" action="/SportSess/sign_up/" name="login">
 					<p class="right">
 						<label for="nom" class="hidden">Login</label>
-						<input type="text" size="12" name="nom" value="Login" maxlength="50" id="nom" class="" />
+						<input type="text" size="12" name="nom" value="Login" maxlength="50" id="nom" class="form_box" />
 						<label for="mot_de_passe" class="hidden">Mot de passe</label>
-						<input type="password" size="12" name="mot_de_passe" value="Mot de Passe" maxlength="50" id="mot_de_passe" class="" />
-						<input type="submit" value="Se Connecter" class="" />
+						<input type="password" size="12" name="mot_de_passe" value="Mot de Passe" maxlength="50" id="mot_de_passe" class="form_box" />
+						<input type="submit" value="Se Connecter" class="form_bouton" />
 					</p>
 				<form>
 			</h2>
@@ -98,18 +98,16 @@
 		<div id="body">
 		<div id="body_inside">
 			
-			<!--
 			<div id="menu">
 				<ul>
-					<li><a href="#">Rubrique 1</a></li>
-					<li><a href="#">Rubrique 2</a></li>
-					<li><a href="#">Rubrique 3</a></li>
-					<li><a href="#">Rubrique 4</a></li>
-					<li><a href="#">Rubrique 5</a></li>
+					<li><a href="/SportSess/profil/" title="" >Profil</a></li>
+					<li><a href="/SportSess/Events_Manager/" title="">Evenements</a></li>
+					<li><a href="/SportSess/friends/" title="">Amis</a></li>
+					<li><a href="/SportSess/fields/" title="">Terrains</a></li>
+					<li><a href="/SportSess/messages/" title="">Messages</a></li>
 				</ul>
 			</div>
-			-->
-			
+			<!--
 			<div id="banner_home">
 			</div>
 		
@@ -148,12 +146,7 @@
 					</p>
 				</form>
 			</div>
-
-			<!--
-			<div id="content">
-			</div>
 			-->
-			
 		</div>
 		</div>
 		
@@ -161,9 +154,5 @@
 		<div id="footer_inside">
 		</div>
 		</div>
-			
-		</div>
 		
-	</body>
-	
-</html>	
+	</body></html>	

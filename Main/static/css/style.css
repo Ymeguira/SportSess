@@ -184,6 +184,7 @@ cite {
 #body {
 	margin: 0px;
 	padding: 0px;
+	overflow: auto;
 }
 
 #body_inside {
@@ -216,7 +217,7 @@ cite {
 
 #menu li {
 	margin: 0 0 1px 0;
-	background: #f3f3f3 ;
+	background: #F3F3F3 ;
 	font-family: Arial;
 	font-size: 14px;
 }
@@ -264,16 +265,23 @@ cite {
 	margin: 20px 0px 0px 0px;
 	padding: 0px;
 	width: 620px;
-	height: 360px;
+	height: 490px;
 	float: left;
+}
+
+#box_home p {
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+	width: 620px;
+	height: 150px;
 	background: #F3F3F3; 
 }
 
 #inscription_home {
-	margin: 20px 0px 0px 0px;
+	margin: 20px 0px 20px 0px;
 	padding: 30px;
 	width: 290px;
-	height: 300px;
+	height: 430px;
 	text-align: right;
 	float: right;
 	background: #F3F3F3; 
