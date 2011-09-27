@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR" lang="fr-FR" dir="ltr">
+
+{% block head %}
+<head>
+
+	<!-- META HTTP-EQUIV -->
+
+	<meta http-equiv="content-language" content="fr-FR" />
+	<meta http-equiv="content-script-type" content="text/javascript" />
+	<meta http-equiv="content-style-type" content="text/css" />
+
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="pragma" content="no-cache" />
+
+	<!-- META NAME -->
+
+	<meta name="" />
+	<meta name="" />
+	<meta name="author" content="Micka&auml;l ODEMER, Yann MEGUIRA" />
+	<meta name="identifier-url" content="http://www.sportsess.com" />
+	<meta name="publisher" content="SportSess" />
+	<meta name="copyright" content="sportsess.com 2011" />
+
+	<meta name="distribution" content="global" />
+
+	<!-- META DUBLIN CORE -->
+
+	<meta name="DC.Language" content="fr" />
+	<meta name="DC.Identifier" content="www.sportsess.com" />
+	<meta name="DC.Title" content="" />
+	<meta name="DC.Subject" content="" />
+	<meta name="DC.Description" content="" />
+	<meta name="DC.Creator" content="SportSess" />
+	<meta name="DC.Publisher" content="SportSess" />
+
+	<meta name="DC.Rights" content="SportSess" />
+
+	<!-- LINK -->
+
+	<link rel="home" href="" title="" />
+	<link rel="contents" href="" title="" />
+	<link rel="search" href="" title="" />
+	<link rel="glossary" href="" title="" />
+
+	<link rel="help" href="" title="" />
+	<link rel="copyright" href="" title="" />
+	<link rel="author" href="" title="" />
+
+	<!-- LINK BOOKMARK -->
+
+	<link rel="bookmark" href="http://www.sportsess.com" title="SportSess" />
+
+	<!-- FLUX RSS -->
+
+	<link rel="alternate" type="application/rss+xml" href="" title="RSS - SportSess" />
+
+	<!-- ICON -->
+
+	<!-- <link rel="icon" type="image/png" href="static/img/favicon.png" /> -->
+	<!--[if lte IE 6]>
+	<link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="static/img/favicon.ico" />
+	<![endif]-->
+	<link rel="apple-touch-icon" type="image/png" href="static/img/apple-touch-icon.png" />
+
+	<!-- CSS -->
+	
+	 
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css" media="screen, projection, tv, handheld" />
+	
+	{% block custom-css-files %}{% endblock %}
+		
+	<!-- JAVASCRIPT -->
+
+	{% include "common/javascript.html" %}
+
+	<title>{% block title %}sportsess.com{% endblock %}</title>
+
+</head>
+{% endblock %}
+
+{% block body %}
+<body>
+	
+	{% block header %}
+	{% include "./header_logout.html" %}
+	{% endblock %}
+	
+	<div id="body">
+	<div id="body_inside">
+	{% block content %}		
+	{% endblock %}
+	</div>
+	</div>
+
+	{% include "common/toolbox.html" %}
+
+	{% include "common/footer.html" %}
+
+</body>
+{% endblock %}
+
+</html>	

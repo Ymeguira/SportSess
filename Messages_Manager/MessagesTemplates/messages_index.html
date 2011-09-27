@@ -1,0 +1,24 @@
+{% extends "./base_messages.html" %}
+
+{% block custom-css %}
+{% endblock %}
+
+{% block title %}
+	SportSess.com. Boite de réception
+{% endblock %}
+
+{% block content %}
+
+<h2 id="write_message">
+		<form method="post" action="/SportSess/messages/compose/" name="composemessage">
+			<p>
+			<input type="submit" value="Nouveau Message" class="form_bouton" />
+			</p>
+		</form>
+</h2>
+
+<!-- Insert the list of the received messages -->
+<p> Liste des messages reçus </p>
+
+{%endblock%}
+

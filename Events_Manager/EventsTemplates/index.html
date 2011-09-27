@@ -1,0 +1,16 @@
+<h1>Name of the next planned sessions:</h1>
+
+{% if latest_Event_list %}
+<ul>
+	{% for event in latest_Event_list %}
+	<li><a href="/SportSess/Events_Manager/detail/{{event.id}}">{{ event.name }}</a></li>
+	{% endfor %}
+</ul>
+{% else %}
+<p>Aucune session n'est prevue.</p>
+{% endif %}
+
+<a href="http://localhost:8000/SportSess/Events_Manager/create/">Create a session?</a>
+</br>
+</br>
+<a href="/SportSess/Events_Manager/search/">Search for a session?</a>

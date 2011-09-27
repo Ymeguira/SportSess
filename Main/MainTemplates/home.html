@@ -1,0 +1,16 @@
+{% extends "common/base.html" %}
+
+{% block custom-css %}
+{% endblock %}
+
+{% block title %}
+	SportSess.com. Home page
+{% endblock %}
+
+{% block content %}
+
+{% include "./menu.html" %}
+
+<h1>Bienvenue {{logged_user.get_username}}</h1>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "./base_messages.html" %}
+
+{% block custom-css %}
+{% endblock %}
+
+{% block title %}
+	SportSess.com. Envoyez un nouveau message.
+{% endblock %}
+
+{% block content %}
+
+<h2 id="post_message">
+	<table>
+	<tr>
+		<td>
+		<form method="post" action="/SportSess/messages/send/" name="sendmessage">
+		<input type="submit" value="Envoyer" class="form_bouton" />
+		</form>
+		</td>
+		<td>
+		<form method="post" action="/SportSess/messages/save/" name="savemessage">
+			<input type="submit" value="Sauvegarder" class="form_bouton" />
+		</form>
+		</td>
+		<td>
+		<form method="post" action="/SportSess/messages/delete/" name="deletemessage">
+			<input type="submit" value="Supprimmer" class="form_bouton" />
+		</form>
+		</td>
+	</tr>
+	</table>
+	
+	<p>
+			<label for="receiver">A:</label><br /><br />
+			<input type="text" size="100" name="object" value="" maxlength="100" id="receiver" class="form_box" />
+	</p>
+	<p>
+			<label for="message_object">Objet</label><br /><br />
+			<input type="text" size="100" name="object" value="" maxlength="100" id="message_object" class="form_box" />
+	</p>
+	<p>	
+		<label for="message">Message :</label><br /><br />
+		<textarea name="message" cols="100" rows="20"></textarea>
+	</p>
+	</TD>
+</h2>
+
+{% endblock %}
+

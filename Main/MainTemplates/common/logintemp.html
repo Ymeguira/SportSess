@@ -1,0 +1,76 @@
+{% extends "common/base.html" %}
+
+{% block title %}
+Bienvenue sur SportSess.com. Connectez-vous ou inscrivez-vous.
+{% endblock %}
+
+{% block header %}
+<h2 id="login_home">
+	<form method="post" action="/SportSess/authentication/" name="login">
+		<p class="right">
+			<label for="nom" class="hidden">Login</label>
+			<input type="text" size="12" name="nom" value="Login" maxlength="50" id="nom" class="form_box" />
+			<label for="mot_de_passe" class="hidden">Mot de passe</label>
+			<input type="password" size="12" name="mot_de_passe" value="Mot de Passe" maxlength="50" id="mot_de_passe" class="form_box" />
+			<input type="submit" value="Se Connecter" class="form_bouton" />
+		</p>
+	<form>
+</h2>
+{% endblock %}
+
+{% block menu %}
+{% endblock %}
+
+{% block content %}
+<div id="banner_home">
+</div>
+
+<div id="box_home">
+</div>
+
+<div id="inscription_home">
+	<form action="" method="post" name="inscription">
+		<p class="right">
+			<label for="nom" class="hidden">Nom</label>
+			<input type="text" size="30" name="nom" value="Nom" maxlength="50" id="nom" class="form_box" />
+		</p>
+
+		<p class="right">
+			<label for="prenom" class="hidden">Prénom</label>
+			<input type="text" size="30" name="prenom" value="Prénom" maxlength="50" id="prenom" class="form_box" />
+		</p>
+
+		<p class="right">
+			<label for="email" class="hidden">E-mail</label>
+			<input type="text" size="30" name="email" value="E-mail" maxlength="50" id="email" class="form_box" />
+		</p>
+
+		<p class="right">
+			<label for="mot_de_passe" class="hidden">Mot de Passe</label>
+			<input type="password" size="30" name="mot_de_passe" value="Mot de Passe" maxlength="50" id="mot_de_passe" class="form_box" />
+		</p>
+
+		<p class="right">
+			<label for="mot_de_passe_confirm" class="hidden">Confirmer Mot de Passe</label>
+			<input type="password" size="30" name="mot_de_passe_confirm" value="Confirmation" maxlength="50" id="mot_de_passe_confirm" class="form_box" />
+		</p>
+
+		<p class="right">
+			<input type="submit" value="S'inscrire" class="form_bouton" />
+		</p>
+	</form>
+</div>
+{% endblock %}
+
+<!-- <h2 id="login_home">
+	<form method="post" action="/SportSess/authentication/" name="login">
+		<p class="right">
+			<label for="nom" class="hidden">Login</label>
+			<input type="text" size="12" name="nom" value="Login" maxlength="50" id="nom" class="" />
+			<label for="mot_de_passe" class="hidden">Mot de passe</label>
+			<input type="password" size="12" name="mot_de_passe" value="Mot de Passe" maxlength="50" id="mot_de_passe" class="" />
+			<input type="submit" value="Se Connecter" class="" />
+		</p>
+	<form>
+</h2>
+ -->

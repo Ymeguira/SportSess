@@ -1,0 +1,17 @@
+<div id="header">
+<div id="header_inside">
+	<h1 role="banner">
+		<a href="http://www.sportsess.fr/" accesskey="1" title="SportSess Accueil"><img src="/static/img/logo.jpg" id="logo" alt="Accueil - sportsess.com" /></a>
+	</h1>
+	<h2 id="disconnect">
+		<form method="post" action="/SportSess/logout/" name="disconnect">
+			<p class="right">
+			{{logged_user.get_username}}
+			<input type="submit" value="Déconnexion" class="form_bouton" />
+			</p>
+		</form>
+	</h2>
+{% block truc %}
+{% endblock %}
+</div>
+</div>

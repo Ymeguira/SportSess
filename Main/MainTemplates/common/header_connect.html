@@ -1,0 +1,20 @@
+{% block header %}
+<div id="header">
+<div id="header_inside">
+	<h1 role="banner">
+		<a href="http://www.sportsess.fr/" accesskey="1" title="SportSess Accueil"><img src="/static/img/logo.jpg" id="logo" alt="Accueil - sportsess.com" /></a>
+	</h1>
+	<h2 id="login_home">
+		<form method="post" action="/SportSess/authentication/" name="login">
+			<p class="right">
+				<label for="nom" class="hidden">Login</label>
+				<input type="text" size="12" name="username" value="Login" maxlength="50" id="nom" class="form_box" />
+				<label for="mot_de_passe" class="hidden">Mot de passe</label>
+				<input type="password" size="12" name="password" value="Mot de Passe" maxlength="50" id="mot_de_passe" class="form_box" />
+				<input type="submit" value="Se Connecter" class="form_bouton" />
+			</p>
+		<form>
+	</h2>
+</div>
+</div>
+{% endblock %}
