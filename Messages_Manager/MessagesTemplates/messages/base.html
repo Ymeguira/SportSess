@@ -1,14 +1,13 @@
 {% extends "common/base.html" %}
+{% load i18n %}  
+{% block bodyclass %}about{% endblock %}
 
 {% block custom-css %}
 {% endblock %}
 
 {% block title %}
-	SportSess.com. Home page
+	SportSess.com. Messages Pages.
 {% endblock %}
 
 {% block content %}
-
-<h1>Bienvenue {{logged_user.get_username}}</h1>
-
 {% endblock %}

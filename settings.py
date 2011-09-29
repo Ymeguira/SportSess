@@ -93,7 +93,7 @@ SECRET_KEY = ')*@%#1h0dqz(@9s-9o7+7(lt8gu9az++^w%=d!fe3u4ka28f1n'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
+     'django.template.loaders.eggs.Loader',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -134,6 +134,7 @@ INSTALLED_APPS = (
     'SportSess.Fields_Manager',
     'SportSess.Messages_Manager',
     'SportSess.Main',
+     'messages',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

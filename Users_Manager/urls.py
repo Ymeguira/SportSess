@@ -14,5 +14,6 @@ urlpatterns = patterns('Users_Manager.views.',
     url(r'^SportSess/profil/$', 'profil'),
     url(r'^SportSess/friends/$', 'friends_list'),
     url(r'^SportSess/messages/$', 'messages'),
+    (r'^messages/', include('messages.urls')),
     url(r'^SportSess/sign_up/$', 'sign_up'),"""
 )

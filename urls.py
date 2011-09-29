@@ -19,7 +19,9 @@ urlpatterns = patterns('',
     
     url(r'^SportSess/$', include('Main.urls')),
     url(r'^SportSess/fields/', include('Fields_Manager.urls')),
-    url(r'^SportSess/messages/', include('Messages_Manager.urls')),
+    
+    url(r'^SportSess/messages/', include('messages.urls')),
+    
     url(r'^SportSess/Events_Manager/', include('Events_Manager.urls')),
 
     
@@ -29,4 +31,6 @@ urlpatterns = patterns('',
     url(r'^SportSess/profil/$', 'SportSess.Users_Manager.views.profil'),
     url(r'^SportSess/friends/$', 'SportSess.Users_Manager.views.friends_list'),
     url(r'^SportSess/sign_up/$', 'SportSess.Users_Manager.views.sign_up'),
+    
+     """ url(r'^SportSess/messages/', include('Messages_Manager.urls')), """
 )

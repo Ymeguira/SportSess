@@ -92,8 +92,14 @@
 	
 	<div id="body">
 	<div id="body_inside">
-	{% block content %}		
+	
+	{% block menu %}
+	 {% include "common/menu.html" %}
 	{% endblock %}
+	
+	{% block content %}	
+	{% endblock %}
+		
 	</div>
 	</div>
 
