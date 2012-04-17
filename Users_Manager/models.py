@@ -54,9 +54,9 @@ class SportSessUser(dbmodels.Model):
         except ValueError:
             assert self.birthday.day == 29 and self.birthday.month == 2
             if leap_day_anniversary_Feb28:
-                anniversary = datetime.date(date.today().year, 2, 28)
+                anniversary = date(date.today().year, 2, 28)
             else:
-                anniversary = datetime.date(date.today().year, 3, 1)
+                anniversary = date(date.today().year, 3, 1)
         if date.today() < anniversary:
             age -= 1
         return age 

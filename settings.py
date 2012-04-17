@@ -136,7 +136,7 @@ INSTALLED_APPS = (
     'SportSess.Main',
      'messages',
     # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    #'django.contrib.admindocs',
 )
 
 # A sample logging configuration. The only tangible logging

@@ -5,6 +5,8 @@ from django.db import models as dbmodels
 from django.views.decorators.csrf import csrf_protect
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
+import pdb
+
 
 def logout(request):
     authlogout(request)
@@ -14,10 +16,12 @@ def logout(request):
     
 def authentication(request):
     
-    logged_username = request.POST['username']
-    logged_password = request.POST['password']
-    
+    logged_username = request.POST['logged_username']
+    logged_password = request.POST['logged_password']
     user = authenticate(username=logged_username, password=logged_password)
+    
+
+    
     if user is not None:
         if user.is_active:
             auth.login(request, user)
@@ -30,6 +34,7 @@ def authentication(request):
     else:
         # Return an 'invalid login' error message.
         return HttpResponse("Mauvais password")
+
     
 @csrf_protect
 def sign_up(request):
@@ -39,7 +44,7 @@ def sign_up(request):
     signup_username = request.POST['username']
     signup_last_name = request.POST['last_name']
     signup_first_name = request.POST['first_name']
-    signup_email = request.POST['first_email']
+    signup_email = request.POST['email']
     signup_password = request.POST['password']
     signup_gender = request.POST['gender']
     signup_year = request.POST['year']

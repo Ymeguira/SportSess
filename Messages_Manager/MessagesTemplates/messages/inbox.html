@@ -2,7 +2,23 @@
 {% load i18n %} 
 {% block content %}
 <h1>{% trans "Inbox" %}</h1>
+<table>
+	<tr><th>
+			<form method="post" action="/SportSess/messages/compose/" name="compose">
+			<input type="submit" value="Nouveau message" class="form_bouton" />
+			</form>
+	</th></tr>
+</table>
+
+
 {% if message_list %} 
+<table>
+	<tr><th>
+			<form method="post" action="/SportSess/messages/compose" name="compose">
+			<input type="submit" value="Nouveau message" class="form_bouton" />
+			</form>
+	</th></tr>
+</table>
 <table class="messages">
     <thead>
         <tr><th>{% trans "Sender" %}</th><th>{% trans "Subject" %}</th><th>{% trans "Received" %}</th><th>{% trans "Action" %}</th></tr>
@@ -25,7 +41,6 @@
 </table>
 {% else %}
 <p>{% trans "No messages." %}</p>
-<p> Test</p>
 {% endif %}  
 {% endblock %}
 

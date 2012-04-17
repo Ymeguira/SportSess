@@ -32,5 +32,5 @@ urlpatterns = patterns('',
     url(r'^SportSess/friends/$', 'SportSess.Users_Manager.views.friends_list'),
     url(r'^SportSess/sign_up/$', 'SportSess.Users_Manager.views.sign_up'),
     
-     """ url(r'^SportSess/messages/', include('Messages_Manager.urls')), """
+     url(r'^SportSess/messages/', include('Messages_Manager.urls')),
 )

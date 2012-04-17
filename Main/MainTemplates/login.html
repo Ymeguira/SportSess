@@ -18,15 +18,21 @@ Bienvenue sur SportSess.com. Connectez-vous ou inscrivez-vous.
 </div>
 
 <div id="inscription_home">
-	<form action="" method="post" name="inscription">
+	
+	<form method="post" action="/SportSess/sign_up/" name="sign_up" >
+	
+		<p class="right">
+			<label for="username" class="hidden">Username</label>
+			<input type="text" size="30" name="username" value="Username" maxlength="50" id="nom" class="form_box" />
+		</p>
 		<p class="right">
 			<label for="nom" class="hidden">Nom</label>
-			<input type="text" size="30" name="nom" value="Nom" maxlength="50" id="nom" class="form_box" />
+			<input type="text" size="30" name="last_name" value="Nom" maxlength="50" id="nom" class="form_box" />
 		</p>
 		
 		<p class="right">
 			<label for="prenom" class="hidden">Prénom</label>
-			<input type="text" size="30" name="prenom" value="Prénom" maxlength="50" id="prenom" class="form_box" />
+			<input type="text" size="30" name="first_name" value="Prénom" maxlength="50" id="prenom" class="form_box" />
 		</p>
 		
 		<p class="right">
@@ -36,12 +42,12 @@ Bienvenue sur SportSess.com. Connectez-vous ou inscrivez-vous.
 		
 		<p class="right">
 			<label for="mot_de_passe" class="hidden">Mot de Passe</label>
-			<input type="password" size="30" name="mot_de_passe" value="Mot de Passe" maxlength="50" id="mot_de_passe" class="form_box" />
+			<input type="password" size="30" name="password" value="Mot de Passe" maxlength="50" id="mot_de_passe" class="form_box" />
 		</p>
 
 		<p class="right">
 			<label for="mot_de_passe_confirm" class="hidden">Confirmer Mot de Passe</label>
-			<input type="password" size="30" name="mot_de_passe_confirm" value="Confirmation" maxlength="50" id="mot_de_passe_confirm" class="form_box" />
+			<input type="password" size="30" name="confirmed_password" value="Confirmation" maxlength="50" id="mot_de_passe_confirm" class="form_box" />
 		</p>
 
 		<p class="right">
@@ -143,6 +149,7 @@ Bienvenue sur SportSess.com. Connectez-vous ou inscrivez-vous.
 		<p class="right">
 			<input type="submit" value="S'inscrire" class="form_bouton" />
 		</p>
-	</form>
+		  
+	</form>	
 </div>
 {% endblock %}
